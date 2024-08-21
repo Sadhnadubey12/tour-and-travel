@@ -3,7 +3,7 @@
 
 <!-- Mirrored from demo.egenslab.com/html/tourxpro/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 09:10:09 GMT -->
 <head>
-<title>TourX Pro - Travels Tourism Agency HTML Template</title>
+<title>paryatak.club</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,11 @@
 <link href="assets/css/boxicons.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -43,6 +48,37 @@
             /* Maintain aspect ratio */
         }
     }
+
+    
+    /* Social media icons */ /* Container for icons */
+    .icon-container {
+      position: fixed;
+      z-index: 1000;
+      bottom: 50px;
+      right: 10px; /* border:2px solid red; */
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .icon-container .icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: transparent;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+      transition: transform 0.3s ease-in-out;
+    }
+    .icon-container .icon:hover {
+      transform: scale(1.1); /* Zoom effect on hover */
+    }
+    .icon-container .icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    } /* container for icons */
 </style>
 <body>
 
@@ -56,182 +92,201 @@
 </div> -->
 
 
-<div class="main-searchbar-wrapper">
-<div class="container">
-<div class="multi-main-searchber">
-<div class="main-searchbar-close search-toggle">
-<i class="bi bi-x-lg"></i>
-</div>
-<form action="#" method="post" id="main_searchbar">
-<div class="row g-4">
-<div class="col-lg-10">
-<div class="row gx-0 gy-4">
-<div class="col-lg-3 col-md-6">
-<div class="search-box-single destination-box">
-<div class="searchbox-icon ">
-<i class="bi bi-geo-alt"></i>
-</div>
-<div class="searchbox-input">
-<label for="deatination_drop">Destination</label>
-<select data-placeholder="Where Are You Going?" id="deatination_drop">
-<option value>Where Are You Going?</option>
-<optgroup label="India">
-<option>
-Solt Lake
-</option>
-<option>
-Kolkata
-</option>
-<option>
-Mohamia
-</option>
-<option>
-Mumbai
-</option>
-<option>
-New Delhi
-</option>
-</optgroup>
-<optgroup label=" Bangladash">
-<option>
-Cox's Bazer
-</option>
-<option>
-Rangamati
-</option>
-<option>
-Banderban
-</option>
-</optgroup>
-</select>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="search-box-single type-box">
-<div class="searchbox-icon">
-<i class="bi bi-text-paragraph"></i>
-</div>
-<div class="searchbox-input">
-<label for="activity-dropdown">Travel Type</label>
-<select class="defult-select-drowpown" data-placeholder="All Activity" id="activity-dropdown">
-<option value>All Activity</option>
-<option value="1">Type 1</option>
-<option value="2">Type 2</option>
-<option value="3">Type 3</option>
-<option value="4">Type 4</option>
-</select>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="search-box-single type-box">
-<div class="searchbox-icon">
-<i class="bi bi-person-plus"></i>
-</div>
-<div class="searchbox-input">
-<label for="person-dropdown">Person</label>
-<select class="defult-select-drowpown" id="person-dropdown">
-<option selected value="0">01</option>
-<option value="1">02</option>
-<option value="2">03</option>
-<option value="3">04</option>
-<option value="4">05</option>
-</select>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="search-box-single date-box">
-<div class="searchbox-icon">
-<i class="bi bi-capslock"></i>
-</div>
-<div class="searchbox-input date-picker-input">
-<label for="datepicker">When</label>
-<input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value class="calendar">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-2">
-<div class="main-form-submit">
-<button type="submit">Find Now</button>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-<div class="category-sidebar-wrapper">
-<div class="category-sidebar">
-<div class="category-header d-flex justify-content-between align-items-center">
-<h4>Category</h4>
-<div class="category-toggle">
-<i class="bi bi-x-lg"></i>
-</div>
-</div>
-<div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate1.svg" alt>
-</div>
-<h5>Adventure</h5>
-</a>
-</div>
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate2.svg" alt>
-</div>
-<h5>Group Tour</h5>
-</a>
-</div>
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate3.svg" alt>
-</div>
-<h5>Couple Tour</h5>
-</a>
-</div>
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate4.svg" alt>
-</div>
-<h5>Single Tour</h5>
-</a>
-</div>
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate5.svg" alt>
-</div>
-<h5>Honeymoon</h5>
-</a>
-</div>
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate6.svg" alt>
-</div>
-<h5>Sea Beach</h5>
-</a>
-</div>
-<div class="col">
-<a class="category-box" href="package.html">
-<div class="cate-icon mx-auto">
-<img src="assets/images/icons/cate7.svg" alt>
-</div>
-<h5>Mountain Tour</h5>
-</a>
-</div>
-</div>
-</div>
-</div>
+ <div class="main-searchbar-wrapper">
+      <div class="container">
+        <div class="multi-main-searchber">
+          <div class="main-searchbar-close search-toggle">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <form action="#" method="post" id="main_searchbar">
+            <div class="row g-4">
+              <div class="col-lg-10">
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="search-box-single destination-box">
+                      <div class="searchbox-icon">
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                      <div class="searchbox-input">
+                        <label for="deatination_drop">Destination</label>
+                        <select
+                          data-placeholder="Where Are You Going?"
+                          id="deatination_drop"
+                        >
+                          <option value>Where Are You Going?</option>
+                          <optgroup label="India">
+                            <option>Solt Lake</option>
+                            <option>Kolkata</option>
+                            <option>Mohamia</option>
+                            <option>Mumbai</option>
+                            <option>New Delhi</option>
+                          </optgroup>
+                          <optgroup label=" Bangladash">
+                            <option>Cox's Bazer</option>
+                            <option>Rangamati</option>
+                            <option>Banderban</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="search-box-single type-box">
+                      <div class="searchbox-icon">
+                        <i class="bi bi-text-paragraph"></i>
+                      </div>
+                      <div class="searchbox-input">
+                        <label for="activity-dropdown">Travel Type</label>
+                        <select
+                          class="defult-select-drowpown"
+                          data-placeholder="All Activity"
+                          id="activity-dropdown"
+                        >
+                          <option value>All Activity</option>
+                          <option value="1">Type 1</option>
+                          <option value="2">Type 2</option>
+                          <option value="3">Type 3</option>
+                          <option value="4">Type 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="search-box-single type-box">
+                      <div class="searchbox-icon">
+                        <i class="bi bi-person-plus"></i>
+                      </div>
+                      <div class="searchbox-input">
+                        <label for="person-dropdown">Person</label>
+                        <select
+                          class="defult-select-drowpown"
+                          id="person-dropdown"
+                        >
+                          <option selected value="0">01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                          <option value="4">05</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="search-box-single date-box">
+                      <div class="searchbox-icon">
+                        <i class="bi bi-capslock"></i>
+                      </div>
+                      <div class="searchbox-input date-picker-input">
+                        <label for="datepicker">When</label>
+                        <input
+                          placeholder="Select your date"
+                          type="text"
+                          name="checkIn"
+                          id="datepicker"
+                          value
+                          class="calendar"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="main-form-submit">
+                  <button type="submit">Find Now</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="category-sidebar-wrapper">
+      <div class="category-sidebar">
+        <div
+          class="category-header d-flex justify-content-between align-items-center"
+        >
+          <h4>Category</h4>
+          <div class="category-toggle">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-2 gy-5 mt-3">
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-umbrella-beach" style="color: orange"></i>
+                <!-- Holiday Icon -->
+              </div>
+              <h5>Holiday</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-plane" style="color: orange"></i>
+                <!-- Flight Icon -->
+              </div>
+              <h5>Flight</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-hotel" style="color: orange"></i>
+                <!-- Hotel Icon -->
+              </div>
+              <h5>Hotel</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-ship" style="color: orange"></i>
+                <!-- Cruise Ship Icon -->
+              </div>
+              <h5>Cruise</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-train" style="color: orange"></i>
+                <!-- Train Icon -->
+              </div>
+              <h5>E-Railway Ticket</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-bus" style="color: orange"></i>
+                <!-- Bus Icon -->
+              </div>
+              <h5>Bus</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-car" style="color: orange"></i>
+                <!-- Car Icon -->
+              </div>
+              <h5>Car</h5>
+            </a>
+          </div>
+          <div class="col">
+            <a class="category-box" href="package.html">
+              <div class="cate-icon mx-auto">
+                <i class="fas fa-passport" style="color: orange"></i>
+                <!-- Passport Icon -->
+              </div>
+              <h5>Visa</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -409,6 +464,11 @@ Banderban
     Instagram: @paryatak.club
 </a>
 
+<a href="https://www.facebook.com/profile.php?id=100095075004330&mibextid=JRoKGi" target="_blank">
+    <img src="/assets/images/indian pic/facebook_5968764.png" alt="Facebook" style="width:24px; height:24px;">
+    Facebook: @paryatak.club
+</a>
+
 </li>
 </ul>
 </div>
@@ -433,163 +493,268 @@ Banderban
 </div>
 </div>
 <div class="container mt-120">
-<form action="#" id="contact_form">
-<div class="contact-form-wrap">
-<h4>Get a free Keystroke quote now</h4>
-<p>Your email address will not be published. Required fields are marked *</p>
-<div class="row">
-<div class="col-lg-6">
-<div class="custom-input-group">
-<label for="name">Name</label>
-<input type="text" placeholder="Your name" id="name">
+    <form action="#" id="inquiry_form">
+        <div class="contact-form-wrap">
+            <h4>Submit Your Inquiry to Paryatak Club</h4>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="custom-input-group">
+                        <label for="name">Name *</label>
+                        <input type="text" placeholder="Your name" id="name" required>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-input-group">
+                        <label for="email">Email *</label>
+                        <input type="email" placeholder="Your Email" id="email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-input-group">
+                <label for="message">Message *</label>
+                <textarea id="message" cols="20" rows="7" placeholder="Your message" required></textarea>
+            </div>
+            <div class="custom-input-group">
+                <div class="submit-btn">
+                    <button type="submit">Send Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>
-</div>
-<div class="col-lg-6">
-<div class="custom-input-group">
-<label for="email">Email</label>
-<input type="text" placeholder="Your Email" id="email">
-</div>
-</div>
-</div>
-<div class="custom-input-group">
-<textarea cols="20" rows="7" placeholder="Your message"></textarea>
-</div>
-<div class="custom-input-group">
-<div class="submite-btn">
-<button type="submit">Send Message</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+
 </div>
 
 
 
+    <!-- Social icons -->
+    <div class="icon-container">
+      <div class="icon whatsapp">
+        <a
+          href="https://api.whatsapp.com/send?phone=+919555695021&text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+          target="_blank"
+        >
+          <img src="/assets/images/indian pic/whatsapp.png" alt="WhatsApp" />
+        </a>
+      </div>
 
-<!-- Footer  start-->
-<div class="footer-area mt-110">
-    <div class="footer-main-wrapper">
+      <div class="icon instagram">
+        <a
+          href="https://www.instagram.com/paryatak.club?utm_source=qr&igsh=MXdtOGNqdmExMGF2bQ=="
+          target="_blank"
+        >
+          <img src="/assets/images/indian pic/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+
+      <div class="icon pbmit-call-text">
+        <a href="tel:+91 9555695021" target="_blank">
+          <img src="/assets/images/indian pic/telephone.png" alt="telephone" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Social icons -->
+
+
+ <!-- Footer  start-->
+    <div class="footer-area mt-110">
+      <div class="footer-main-wrapper">
         <div class="footer-vactor">
-            <img src="assets/images/banner/footer-bg.png" alt>
+          <img src="assets/images/banner/footer-bg.png" alt />
         </div>
         <div class="container">
-            <div class="row justify-content-center g-4">
-                <div class="col-lg-4">
-                    <div class="footer-about text-lg-start text-center">
-                        <p>Explore the world with Paryatak.club, where every journey is crafted with care. Discover unique destinations and create unforgettable memories.</p>
+          <div class="row justify-content-center g-4">
+            <div class="col-lg-4">
+              <div class="footer-about text-lg-start text-center">
+                <p>
+                  Explore the world with Paryatak.club, where every journey is
+                  crafted with care. Discover unique destinations and create
+                  unforgettable memories.
+                </p>
 
-                        <div class="footer-social-wrap">
-                            <h5>Follow Us On:</h5>
-                            <ul class="footer-social-links justify-content-lg-start justify-content-center">
-                                <li><a href="https://www.instagram.com/paryatak.club?utm_source=qr&igsh=MXdtOGNqdmExMGF2bQ==" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                                <!-- <li><a href="#"><i class="bx bxl-facebook"></i></a></li> -->
-                                <li><a href="https://www.youtube.com/@Paryatak.Club01" target="_blank"><i class="bx bxl-youtube"></i></a></li>
-                                <li><a href="https://wa.me/919555695021"><i class="bx bxl-whatsapp"></i></a></li>
-                                <!-- <li><a href="#"><i class="bx bxl-pinterest-alt"></i></a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title">Quick Link</h4>
-                        <ul class="footer-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="destination.html">Services</a></li>
-                            <li><a href="package.html">Travel Plan</a></li>
-                            <li><a href="package-standard.html">Offers</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <!-- <li><a href="blog.html">Blog</a></li> -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title">Tour Type</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Wild & Adventure Tours</a></li>
-                            <li><a href="#">Group Tour</a></li>
-                            <li><a href="#">Seasonal Tours</a></li>
-                            <li><a href="#">Relaxation Tours</a></li>
-                            <li><a href="#">Family Friendly Tours</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title text-center">Gallery</h4>
-                        <div class="footer-gallary-grid">
-                            <div class="footer-gallary-item">
-                                <a href="assets/images/gallary/fg-1.png" data-fancybox="footer"
-                                    data-caption="Caption Here"><img src="assets/images/gallary/fg-1.png" alt></a>
-                            </div>
-                            <div class="footer-gallary-item">
-                                <a href="assets/images/gallary/fg-2.png" data-fancybox="footer"
-                                    data-caption="Caption Here"><img src="assets/images/gallary/fg-2.png" alt></a>
-                            </div>
-                            <div class="footer-gallary-item">
-                                <a href="assets/images/gallary/fg-3.png" data-fancybox="footer"
-                                    data-caption="Caption Here"><img src="assets/images/gallary/fg-3.png" alt></a>
-                            </div>
-                            <div class="footer-gallary-item">
-                                <a href="assets/images/gallary/fg-4.png" data-fancybox="footer"
-                                    data-caption="Caption Here"><img src="assets/images/gallary/fg-4.png" alt></a>
-                            </div>
-                            <div class="footer-gallary-item">
-                                <a href="assets/images/gallary/fg-5.png" data-fancybox="footer"
-                                    data-caption="Caption Here"><img src="assets/images/gallary/fg-5.png" alt></a>
-                            </div>
-                            <div class="footer-gallary-item">
-                                <a href="assets/images/gallary/fg-6.png" data-fancybox="footer"
-                                    data-caption="Caption Here"><img src="assets/images/gallary/fg-6.png" alt></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-contact-wrapper">
-                <h5>Contact Us:</h5>
-                <ul class="footer-contact-list">
-                    <li><i class="bi bi-telephone-x"></i> <a href="tel:+17632275032">+91 9555695021</a></li>
-                    <li><i class="bi bi-envelope-open"></i> <a
-                            href="https://demo.egenslab.com/cdn-cgi/l/email-protection#d3babdb5bc93a7bca6a1aba3a1bcfdb0bcbe"><span
-                                class="__cf_email__"
-                                data-cfemail="c9a0a7afa689bda6bcbbb1b9bba6e7aaa6a4">bookingparyatak@gmail.com</span></a>
+                <div class="footer-social-wrap">
+                  <h5>Follow Us On:</h5>
+                  <ul
+                    class="footer-social-links justify-content-lg-start justify-content-center"
+                  >
+                    <li>
+                      <a
+                        href="https://www.instagram.com/paryatak.club?utm_source=qr&igsh=MXdtOGNqdmExMGF2bQ=="
+                        target="_blank"
+                        ><i class="bx bxl-instagram"></i
+                      ></a>
                     </li>
-                    <li><i class="bi bi-geo-alt"></i> <a href="contact.html">Karanda, Karanda Ghazipur - Uttar Pradesh - India (233224)</a></li>
+                    <!-- <li><a href="#"><i class="bx bxl-facebook"></i></a></li> -->
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@Paryatak.Club01"
+                        target="_blank"
+                        ><i class="bx bxl-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100095075004330&mibextid=JRoKGi"
+                        target="_blank"
+                        ><i class="bx bxl-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/919555695021"
+                        ><i class="bx bxl-whatsapp"></i
+                      ></a>
+                    </li>
+                    <!-- <li><a href="#"><i class="bx bxl-pinterest-alt"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">Quick Link</h4>
+                <ul class="footer-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="destination.html">Services</a></li>
+                  <li><a href="package.html">Travel Plan</a></li>
+                  <li><a href="package-standard.html">Offers</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <!-- <li><a href="blog.html">Blog</a></li> -->
                 </ul>
+              </div>
             </div>
+            <div class="col-lg-2 col-md-4">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">Tour Type</h4>
+                <ul class="footer-links">
+                  <li><a href="#">Wild & Adventure Tours</a></li>
+                  <li><a href="#">Group Tour</a></li>
+                  <li><a href="#">Seasonal Tours</a></li>
+                  <li><a href="#">Relaxation Tours</a></li>
+                  <li><a href="#">Family Friendly Tours</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title text-center">Gallery</h4>
+                <div class="footer-gallary-grid">
+                  <div class="footer-gallary-item">
+                    <a
+                      href="assets/images/gallary/fg-1.png"
+                      data-fancybox="footer"
+                      data-caption="Caption Here"
+                      ><img src="assets/images/gallary/fg-1.png" alt
+                    /></a>
+                  </div>
+                  <div class="footer-gallary-item">
+                    <a
+                      href="assets/images/gallary/fg-2.png"
+                      data-fancybox="footer"
+                      data-caption="Caption Here"
+                      ><img src="assets/images/gallary/fg-2.png" alt
+                    /></a>
+                  </div>
+                  <div class="footer-gallary-item">
+                    <a
+                      href="assets/images/gallary/fg-3.png"
+                      data-fancybox="footer"
+                      data-caption="Caption Here"
+                      ><img src="assets/images/gallary/fg-3.png" alt
+                    /></a>
+                  </div>
+                  <div class="footer-gallary-item">
+                    <a
+                      href="assets/images/gallary/fg-4.png"
+                      data-fancybox="footer"
+                      data-caption="Caption Here"
+                      ><img src="assets/images/gallary/fg-4.png" alt
+                    /></a>
+                  </div>
+                  <div class="footer-gallary-item">
+                    <a
+                      href="assets/images/gallary/fg-5.png"
+                      data-fancybox="footer"
+                      data-caption="Caption Here"
+                      ><img src="assets/images/gallary/fg-5.png" alt
+                    /></a>
+                  </div>
+                  <div class="footer-gallary-item">
+                    <a
+                      href="assets/images/gallary/fg-6.png"
+                      data-fancybox="footer"
+                      data-caption="Caption Here"
+                      ><img src="assets/images/gallary/fg-6.png" alt
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-contact-wrapper">
+            <h5>Contact Us:</h5>
+            <ul class="footer-contact-list">
+              <li>
+                <i class="bi bi-telephone-x"></i>
+                <a href="tel:+17632275032">+91 9555695021</a>
+              </li>
+              <li>
+                <i class="bi bi-envelope-open"></i>
+                <a
+                  href="https://demo.egenslab.com/cdn-cgi/l/email-protection#d3babdb5bc93a7bca6a1aba3a1bcfdb0bcbe"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="c9a0a7afa689bda6bcbbb1b9bba6e7aaa6a4"
+                    >bookingparyatak@gmail.com</span
+                  ></a
+                >
+              </li>
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <a href="contact.html"
+                  >Karanda, Karanda Ghazipur - Uttar Pradesh - India (233224)</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-4 col-md-6 order-lg-1 order-3 ">
-                    <div class="copyright-link text-lg-start text-center">
-                        <p>Copyright 2024 | Design By <a href="#"> paryatak.club</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-4  order-lg-2 order-1">
-                    <div class="footer-logo text-center">
-                        <a href="index.html"><img src="assets/images/WhatsApp_Image_2024-08-10_at_1.38.43_PM-removebg-preview.png" alt height="90px"></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 order-lg-3 order-2">
-                    <div class="policy-links">
-                        <ul class="policy-list justify-content-lg-end justify-content-center">
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-4 col-md-6 order-lg-1 order-3">
+              <div class="copyright-link text-lg-start text-center">
+                <p>Copyright 2024 | Design By <a href="#"> paryatak.club</a></p>
+              </div>
             </div>
+            <div class="col-lg-4 order-lg-2 order-1">
+              <div class="footer-logo text-center">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/WhatsApp_Image_2024-08-10_at_1.38.43_PM-removebg-preview.png"
+                    alt
+                    height="90px"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 order-lg-3 order-2">
+              <div class="policy-links">
+                <ul
+                  class="policy-list justify-content-lg-end justify-content-center"
+                >
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Footer  end-->
+    <!-- Footer  end-->
 
 <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
